@@ -14,3 +14,104 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+button {
+  background-color: #6703f5;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #5500ff;
+}
+
+.accessibility-panel {
+  position:absolute;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 1rem;
+  color: #000;
+}
+
+.accessibility-panel.open {
+  right: 0;
+}
+
+body.high-contrast {
+  background: #000;
+  color: #fff;
+}
+
+body.dark-mode {
+  background: #333;
+  color: #fff;
+}
+
+body.large-text {
+  font-size: 1.25rem;
+}
+
+body.dyslexia-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+
+body.keyboard-nav *:focus {
+  outline: 2px solid red;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
