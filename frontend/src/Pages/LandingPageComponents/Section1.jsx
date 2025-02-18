@@ -1,9 +1,11 @@
 import { Flex, Text, Button, Image, Box } from "@chakra-ui/react";
 import teacher from "../../asset/A.png";
 import { useNavigate } from "react-router-dom";
-const Section1 = () => {
+
+  const Section1 = () => {
   const navigate = useNavigate();
   return (
+    
     <Flex mt={100} mb={70} gap={50} p="15px" justify="center">
       <Flex
         direction="column"
@@ -95,7 +97,10 @@ const Section1 = () => {
         />
       </Box>
     </Flex>
+   
   );
 };
 
+
 export default Section1;
+

@@ -385,7 +385,7 @@ const Footer = () => {
         <Box>
           {" "}
           <Text fontSize="13.5px">
-            © 2023 SRM Inc. All rights reserved.
+            © 2025 Inc. All rights reserved.
           </Text>
         </Box>
         <Flex spacing={4} overflow='hidden'>

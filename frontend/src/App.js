@@ -4,6 +4,8 @@ import AllRoute from "./routes/AllRoute";
 import Navbar from "./components/UserComponents/UserNavbar";
 import { Box, Text } from "@chakra-ui/react";
 
+
+
 const AccessibilityPanel = () => {
     const [isPanelOpen, setIsPanelOpen] = useState(false);
     const [highContrast, setHighContrast] = useState(false);
@@ -25,6 +27,7 @@ const AccessibilityPanel = () => {
             return !prev;
         });
     };
+    
 
     const handleTextToSpeech = () => {
         if ('speechSynthesis' in window) {
@@ -60,6 +63,8 @@ const AccessibilityPanel = () => {
             alert("Voice commands are not supported in this browser.");
         }
     };
+
+    
 
     return (
         <div>

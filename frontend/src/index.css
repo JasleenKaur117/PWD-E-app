@@ -131,14 +131,76 @@ body.dark-mode {
   color: #fff;
 }
 
-body.large-text{
-  font-size: 1.25rem;
-}
 
 
 
 body.dyslexia-font {
   font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+
+body.large-text {
+  font-size: 1.1rem !important;
+}
+
+/* Scale all text-based elements while maintaining layout */
+body.large-text *,
+body.large-text *::before,
+body.large-text *::after {
+  font-size: 1.3rem !important;
+  line-height: 1.5 !important;
+  word-break: break-word; /* Prevents overflow */
+}
+
+/* Keep headings slightly larger while preventing shrinking */
+body.large-text h1 {
+  font-size: 1.5rem !important;
+}
+
+body.large-text h2 {
+  font-size: 2.4rem !important;
+}
+
+body.large-text h3 {
+  font-size: 2rem !important;
+}
+
+body.large-text h4 {
+  font-size: 1.6rem !important;
+}
+
+body.large-text h5 {
+  font-size: 1.4rem !important;
+}
+
+body.large-text h6 {
+  font-size: 1.2rem !important;
+}
+
+/* Ensure buttons, inputs, and form elements remain readable */
+body.large-text button,
+body.large-text input,
+body.large-text textarea,
+body.large-text select,
+body.large-text label {
+  font-size: 1.1rem !important;
+}
+
+/* Prevent text from touching edges */
+body.large-text p, 
+body.large-text div, 
+body.large-text span, 
+body.large-text li {
+  margin-bottom: 0.5rem !important; /* Adds spacing between elements */
+  padding: 0.2rem 0; /* Adds padding for better spacing */
+}
+
+/* Ensure sections expand properly */
+body.large-text section,
+body.large-text article,
+body.large-text .container {
+  padding: 1rem !important;
+  max-width: 100% !important; /* Prevents content from being squished */
+  overflow-wrap: break-word; /* Ensures text breaks naturally */
 }
 
 body.keyboard-nav *:focus {

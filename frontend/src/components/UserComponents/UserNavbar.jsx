@@ -68,7 +68,7 @@ const Navbar = () => {
               _hover={{ cursor: "pointer" }}
               onClick={home}
             >
-              SRM 
+              PWD
             </Text>
           </Box>
         </Flex>
@@ -166,7 +166,7 @@ const Navbar = () => {
                 _hover={{ color: "#003e9c", textDecoration: "underline" }}
                 href="/Teachme"
               >
-                {user.role!=='teacher' && user.role!=='admin' && 'Teach On SRM'}            
+                {user.role!=='teacher' && user.role!=='admin' && 'Teach'}            
               </Link>
             </Box>
             <Box>

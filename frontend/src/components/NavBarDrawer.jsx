@@ -109,7 +109,7 @@ export function NavBarDrawer({ isOpen, onClose }) {
                 color="#0056d2"
                 _hover={{ cursor: "pointer" }}
               >
-                SRM
+                PWD
               </Text>
             </Link>
             <Box>
