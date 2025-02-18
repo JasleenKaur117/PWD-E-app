@@ -78,8 +78,8 @@ body.dark-mode {
   color: #fff;
 }
 
-body.large-text {
-  font-size: 1.25rem;
+.large-text {
+  font-size: 2rem;
 }
 
 body.dyslexia-font {

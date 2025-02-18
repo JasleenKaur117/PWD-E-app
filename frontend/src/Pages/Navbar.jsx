@@ -55,7 +55,7 @@ const Navbar = () => {
               onClick={home}
               _hover={{ cursor: "pointer" }}
             >
-              SRM 
+              PWD
             </Text>
           </Box>
         </Flex>

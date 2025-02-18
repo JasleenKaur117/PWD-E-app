@@ -4,7 +4,7 @@ import { Box, Grid, Heading, Link, Flex, Image, Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <Flex
-      bg="#f5f5f5"
+      
       p={5}
       paddingBottom={{
         sm: "60px",

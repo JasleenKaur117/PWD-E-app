@@ -65,58 +65,61 @@ const AccessibilityPanel = () => {
         <div>
             <button id="accessibility-btn" onClick={togglePanel}>Accessibility</button>
             <div id="accessibility-panel" className={`accessibility-panel ${isPanelOpen ? 'open' : ''}`}>
-                <h2>Accessibility Settings</h2>
-                <label>
+                
+                <label button className="acc-btn">
                     <input
-                        type="checkbox"
+                        type="button"
                         checked={highContrast}
-                        onChange={() => handleToggle(setHighContrast, 'high-contrast')}
+                        onClick={() => handleToggle(setHighContrast, 'high-contrast')}
                     /> High Contrast Mode
                 </label>
-                <label>
+                <label button className="acc-btn">
                     <input
-                        type="checkbox"
+                        type="button"
                         checked={darkMode}
-                        onChange={() => handleToggle(setDarkMode, 'dark-mode')}
+                        onClick={() => handleToggle(setDarkMode, 'dark-mode')}
                     /> Dark Mode
                 </label>
-                <label>
+                <label button className="acc-btn">
                     <input
-                        type="checkbox"
+                        type="button"
                         checked={largeText}
-                        onChange={() => handleToggle(setLargeText, 'large-text')}
+                        onClick={() => handleToggle(setLargeText, 'large-text')}
                     /> Large Text
                 </label>
-                <label>
+                <label button className="acc-btn">
                     <input
-                        type="checkbox"
+                        type="button"
                         checked={dyslexiaFont}
-                        onChange={() => handleToggle(setDyslexiaFont, 'dyslexia-font')}
+                        onClick={() => handleToggle(setDyslexiaFont, 'dyslexia-font')}
                     /> Dyslexia-Friendly Font
                 </label>
-                <label>
+                <label button className="acc-btn">
                     <input
-                        type="checkbox"
+                        type="button"
                         checked={keyboardNav}
-                        onChange={() => handleToggle(setKeyboardNav, 'keyboard-nav')}
+                        onClick={() => handleToggle(setKeyboardNav, 'keyboard-nav')}
                     /> Keyboard Navigation
                 </label>
-                <label>
+                <label button className="acc-btn">
                     <input
-                        type="checkbox"
+                        type="button"
                         checked={textToSpeech}
-                        onChange={() => {
+                        onClick={() => {
                             setTextToSpeech(!textToSpeech);
                             handleTextToSpeech();
                         }}
                     /> Text-to-Speech
                 </label>
-                <button id="close-panel" onClick={togglePanel}>Close</button>
-                <button id="voice-command-btn" onClick={handleVoiceCommand}>🎤 Voice Command</button>
+                <button className="acc-btn" onClick={handleVoiceCommand}>🎤 Voice Command</button>
+              
+                
             </div>
+            
         </div>
     );
 };
+ // <button id="close-panel" onClick={togglePanel}>Close</button>
 
 function App() {
     const userStore = useSelector((store) => store.UserReducer);

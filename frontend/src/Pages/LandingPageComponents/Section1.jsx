@@ -36,7 +36,7 @@ const Section1 = () => {
           }}
           fontWeight="semibold"
         >
-          <Text fontSize='2rem' color="#0056d2" display='inline'>SRM</Text> Where Educators and Students Connect Seamlessly Online. Teachers craft personalized courses for various subjects and grades, while students explore and purchase courses tailored to their needs. Empowering both educators and learners, SRM revolutionizes online education.
+          <Text fontSize='2rem' color="#0056d2" display='inline'>PWD</Text> Where Educators and Students Connect Seamlessly Online. Teachers craft personalized courses for various subjects and grades, while students explore and purchase courses tailored to their needs. Empowering both educators and learners, PWD revolutionizes online education.
         </Text>
         <Flex
           gap={30}
@@ -75,7 +75,7 @@ const Section1 = () => {
             border="3px solid #0056d2"
             onClick={() => navigate("/login")}
           >
-            Try SRM for Business
+            Try Business
           </Button>
         </Flex>
       </Flex>

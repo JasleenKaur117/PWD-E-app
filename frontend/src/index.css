@@ -47,6 +47,7 @@ code {
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 1rem;
   background: linear-gradient(to right, #8360c3, #2ebf91);
   margin: 0;
   padding: 0;
@@ -75,17 +76,19 @@ button:hover {
   right: -300px;
   width: 300px;
   height: 100%;
-  background-color: #ffffff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  /*box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #000;*/
   transition: right 0.3s ease;
   padding: 1rem;
-  color: #000;
+  
   z-index: 2147483647;
   
 }
 
 .accessibility-panel.open {
   right: 0;
+  background-color: transparent;
 }
 
 
@@ -103,6 +106,16 @@ button:hover {
   z-index: 2147483647;
 }
 
+.acc-btn{
+  background-color: #5500ff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 10px;
+}
 #accessibility-btn:hover {
   background-color: #5500ff;
 }
@@ -113,13 +126,16 @@ body.high-contrast {
 }
 
 body.dark-mode {
+  background-color: #333;
   background: #333;
   color: #fff;
 }
 
-body.large-text {
+body.large-text{
   font-size: 1.25rem;
 }
+
+
 
 body.dyslexia-font {
   font-family: 'OpenDyslexic', Arial, sans-serif;
@@ -147,7 +163,7 @@ body.keyboard-nav *:focus {
   width: 300px;
   height: 80vh; /* Adjusted height to fit well */
   background-color: #ffffff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  /*box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);*/
   transition: right 0.3s ease;
   padding: 1rem;
   color: #000;
