@@ -96,7 +96,7 @@ button:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #6703f5;
+  background-color: hwb(291 3% 32%);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -107,7 +107,7 @@ button:hover {
 }
 
 .acc-btn{
-  background-color: #5500ff;
+  background-color: hwb(291 3% 32%);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;

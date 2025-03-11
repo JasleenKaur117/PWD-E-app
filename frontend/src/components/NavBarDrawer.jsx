@@ -106,7 +106,7 @@ export function NavBarDrawer({ isOpen, onClose }) {
                 textAlign="center"
                 fontSize={30}
                 fontWeight="extrabold"
-                color="#0056d2"
+                color="hwb(291 3% 32%)"
                 _hover={{ cursor: "pointer" }}
               >
                 PWD
@@ -123,7 +123,7 @@ export function NavBarDrawer({ isOpen, onClose }) {
                   {userStore?.role === "admin" || userStore?.role==='teacher' ? (
                     <Flex alignItems={"center"}>
                       <Box>
-                        <FaUserShield size="2rem" color="#0056d2" />
+                        <FaUserShield size="2rem" color="hwb(291 3% 32%)" />
                         <Text fontSize="0.6rem" fontWeight="bold">
                           {capitalizeFirstLetter(userStore?.role)}
                         </Text>
@@ -134,7 +134,7 @@ export function NavBarDrawer({ isOpen, onClose }) {
                     </Flex>
                   ) : userStore?.role === "user" ? (
                     <Flex alignItems={"center"}>
-                      <BiUserCircle size="2rem" color="#0056d2" />
+                      <BiUserCircle size="2rem" color="hwb(291 3% 32%)" />
                       <Heading size="sm" ml="1rem">
                         {capitalizeFirstLetter(userStore?.name)}
                       </Heading>
@@ -160,7 +160,7 @@ export function NavBarDrawer({ isOpen, onClose }) {
               >
                 <Link to="/login">
                   <Button
-                    bg="#0056d2"
+                    bg="hwb(291 3% 32%)"
                     color="white"
                     borderRadius="5px"
                     _hover={{ bg: "#003e9c" }}
@@ -170,7 +170,7 @@ export function NavBarDrawer({ isOpen, onClose }) {
                 </Link>
                 <Link to="/signup">
                   <Button
-                    bg="#0056d2"
+                    bg="hwb(291 3% 32%)"
                     color="white"
                     borderRadius="5px"
                     _hover={{ bg: "#003e9c" }}

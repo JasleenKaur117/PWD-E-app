@@ -323,7 +323,7 @@ const SignUp = () => {
               <Button
                 w="100%"
                 color="white"
-                bg="#0056D2"
+                bg="hwb(291 3% 32%)"
                 _hover={{ background: "#1E88E5", color: "#CFD8DC" }}
                 borderRadius="0"
                 textAlign="center"

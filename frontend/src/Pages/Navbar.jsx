@@ -51,7 +51,7 @@ const Navbar = () => {
             <Text
               fontSize={30}
               fontWeight="extrabold"
-              color="#0056d2"
+              color="hwb(291 3% 32%)"
               onClick={home}
               _hover={{ cursor: "pointer" }}
             >
@@ -79,7 +79,7 @@ const Navbar = () => {
             <IconButton
               aria-label="Search"
               icon={<FaSearch />}
-              bg="#0056d2"
+              bg="hwb(291 3% 32%)"
               color="white"
               borderRadius="0px 10px 10px 0px"
               _hover={{ background: "#0288D1" }}
@@ -91,7 +91,7 @@ const Navbar = () => {
               aria-label="Menu"
               icon={<FaBars />}
               bg="transparent"
-              color="#0056d2"
+              color="hwb(291 3% 32%)"
               onClick={onOpen}
               fontSize="2xl"
               mr={2}
@@ -137,14 +137,14 @@ const Navbar = () => {
               </Link>
             </Box>
             <Box mr={4}>
-              <Link textDecoration="none" color="#0056d2" href="/login">
+              <Link textDecoration="none" color="hwb(291 3% 32%)" href="/login">
                 Login
               </Link>
             </Box>
 
             {/* Join for Free Button */}
             <Button
-              bg="#0056d2"
+              bg="hwb(291 3% 32%)"
               color="white"
               borderRadius="5px"
               _hover={{ bg: "#003e9c" }}

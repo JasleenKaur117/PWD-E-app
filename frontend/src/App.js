@@ -76,35 +76,35 @@ const AccessibilityPanel = () => {
                         type="button"
                         checked={highContrast}
                         onClick={() => handleToggle(setHighContrast, 'high-contrast')}
-                    /> High Contrast Mode
+                    /> 🌓
                 </label>
                 <label button className="acc-btn">
                     <input
                         type="button"
                         checked={darkMode}
                         onClick={() => handleToggle(setDarkMode, 'dark-mode')}
-                    /> Dark Mode
+                    /> 🌙
                 </label>
                 <label button className="acc-btn">
                     <input
                         type="button"
                         checked={largeText}
                         onClick={() => handleToggle(setLargeText, 'large-text')}
-                    /> Large Text
+                    /> 🔎
                 </label>
                 <label button className="acc-btn">
                     <input
                         type="button"
                         checked={dyslexiaFont}
                         onClick={() => handleToggle(setDyslexiaFont, 'dyslexia-font')}
-                    /> Dyslexia-Friendly Font
+                            /> 🅰️
                 </label>
                 <label button className="acc-btn">
                     <input
                         type="button"
                         checked={keyboardNav}
                         onClick={() => handleToggle(setKeyboardNav, 'keyboard-nav')}
-                    /> Keyboard Navigation
+                    /> ⌨️
                 </label>
                 <label button className="acc-btn">
                     <input
@@ -114,9 +114,9 @@ const AccessibilityPanel = () => {
                             setTextToSpeech(!textToSpeech);
                             handleTextToSpeech();
                         }}
-                    /> Text-to-Speech
+                    /> 🔊
                 </label>
-                <button className="acc-btn" onClick={handleVoiceCommand}>🎤 Voice Command</button>
+                <button className="acc-btn" onClick={handleVoiceCommand}>🎤</button>
               
                 
             </div>
